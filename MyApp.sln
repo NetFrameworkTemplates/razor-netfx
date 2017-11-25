@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp", "MyApp\MyApp\MyApp.csproj", "{E669FB75-4FCC-4213-B151-7C38BD9DF7BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp", "MyApp\MyApp.csproj", "{E669FB75-4FCC-4213-B151-7C38BD9DF7BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.ServiceModel", "MyApp\MyApp.ServiceModel\MyApp.ServiceModel.csproj", "{7E8AF6BE-3F12-4CED-86DD-EC8B924DE1AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.ServiceModel", "MyApp.ServiceModel\MyApp.ServiceModel.csproj", "{7E8AF6BE-3F12-4CED-86DD-EC8B924DE1AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.ServiceInterface", "MyApp\MyApp.ServiceInterface\MyApp.ServiceInterface.csproj", "{6112FBBF-CF5C-46AC-A526-5CD3A79FA200}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.ServiceInterface", "MyApp.ServiceInterface\MyApp.ServiceInterface.csproj", "{6112FBBF-CF5C-46AC-A526-5CD3A79FA200}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Tests", "MyApp\MyApp.Tests\MyApp.Tests.csproj", "{7930706E-EF78-4612-9A0B-D84CB94EFF40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Tests", "MyApp.Tests\MyApp.Tests.csproj", "{7930706E-EF78-4612-9A0B-D84CB94EFF40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

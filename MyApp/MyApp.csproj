@@ -110,6 +110,16 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MyApp.ServiceInterface\MyApp.ServiceInterface.csproj">
+      <Project>{6112fbbf-cf5c-46ac-a526-5cd3a79fa200}</Project>
+      <Name>MyApp.ServiceInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyApp.ServiceModel\MyApp.ServiceModel.csproj">
+      <Project>{7e8af6be-3f12-4ced-86dd-ec8b924de1ab}</Project>
+      <Name>MyApp.ServiceModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="wwwroot\assets\css\bootstrap.css" />
     <Content Include="wwwroot\assets\css\default.css" />
@@ -146,16 +156,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MyApp.ServiceInterface\MyApp.ServiceInterface.csproj">
-      <Project>{6112fbbf-cf5c-46ac-a526-5cd3a79fa200}</Project>
-      <Name>MyApp.ServiceInterface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MyApp.ServiceModel\MyApp.ServiceModel.csproj">
-      <Project>{7e8af6be-3f12-4ced-86dd-ec8b924de1ab}</Project>
-      <Name>MyApp.ServiceModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

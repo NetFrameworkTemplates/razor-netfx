@@ -1,14 +1,18 @@
+using System;
+using System.Collections.Generic;
 using ServiceStack;
 using ServiceStack.Auth;
+using ServiceStack.Configuration;
 using ServiceStack.FluentValidation;
+using ServiceStack.Web;
 
 namespace MyApp
 {
     // Add any additional metadata properties you want to store in the Users Typed Session
-    public class CustomUserSession : AuthUserSession 
+    public class CustomUserSession : AuthUserSession
     {
     }
-    
+
     // Custom Validator to add custom validators to built-in /register Service requiring DisplayName and ConfirmPassword
     public class CustomRegistrationValidator : RegistrationValidator
     {

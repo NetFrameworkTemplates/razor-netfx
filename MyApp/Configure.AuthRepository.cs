@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
 using ServiceStack;
-using ServiceStack.Web;
 using ServiceStack.Auth;
 using ServiceStack.Configuration;
+using ServiceStack.FluentValidation;
+using ServiceStack.Web;
 
 namespace MyApp
 {
@@ -17,7 +18,7 @@ namespace MyApp
 
     public class AppUserAuthEvents : AuthEvents
     {
-        public override void OnAuthenticated(IRequest req, IAuthSession session, IServiceBase authService, 
+        public override void OnAuthenticated(IRequest req, IAuthSession session, IServiceBase authService,
             IAuthTokens tokens, Dictionary<string, string> authInfo)
         {
             var authRepo = HostContext.AppHost.GetAuthRepository(req);
@@ -41,7 +42,7 @@ namespace MyApp
             var authRepo = appHost.Resolve<IAuthRepository>();
             authRepo.InitSchema();
 
-            CreateUser(authRepo, "admin@email.com", "Admin User", "p@55wOrd", roles:new[]{ RoleNames.Admin });
+            CreateUser(authRepo, "admin@email.com", "Admin User", "p@55wOrd", roles: new[] { RoleNames.Admin });
         }
 
         public void BeforePluginsLoaded(IAppHost appHost)

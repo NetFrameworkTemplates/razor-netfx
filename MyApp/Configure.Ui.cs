@@ -1,5 +1,7 @@
+using ServiceStack.Razor;
 using System.Collections.Generic;
 using ServiceStack;
+using ServiceStack.Razor;
 
 namespace MyApp
 {
@@ -7,6 +9,9 @@ namespace MyApp
     {
         public void Configure(IAppHost appHost)
         {
+            appHost.CustomErrorHttpHandlers[HttpStatusCode.NotFound] = new RazorHandler("/notfound");
+            appHost.CustomErrorHttpHandlers[HttpStatusCode.Forbidden] = new RazorHandler("/forbidden");
+
             Svg.Load(appHost.RootDirectory.GetDirectory("/assets/svg"));
             Svg.CssFillColor["svg-icons"] = "#343a40";
 

@@ -35,9 +35,6 @@ namespace MyApp
 
             Plugins.Add(new RazorFormat());
 
-            CustomErrorHttpHandlers[HttpStatusCode.NotFound] = new RazorHandler("/notfound");
-            CustomErrorHttpHandlers[HttpStatusCode.Forbidden] = new RazorHandler("/forbidden");
-
             if (Config.DebugMode)
             {
                 Plugins.Add(new HotReloadFeature());

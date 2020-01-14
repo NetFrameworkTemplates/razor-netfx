@@ -6,7 +6,7 @@ ASP.NET Framework Bootstrap Website with ServiceStack.Razor
 
 > Browse [source code](https://github.com/NetFrameworkTemplates/razor-netfx), view live demo [razor.web-templates.io](http://razor.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
 
-    $ dotnet tool install --global web
+    $ dotnet tool install --global x
 
-    $ web new razor-netfx ProjectName
+    $ x new razor-netfx ProjectName
 

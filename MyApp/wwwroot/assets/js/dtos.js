@@ -15,7 +15,6 @@ BaseUrl: https://localhost:5001
 //DefaultImports:
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Register = exports.UnAssignRoles = exports.AssignRoles = exports.Authenticate = exports.Hello = exports.RegisterResponse = exports.UnAssignRolesResponse = exports.AssignRolesResponse = exports.AuthenticateResponse = exports.HelloResponse = exports.ResponseStatus = exports.ResponseError = void 0;
 // @DataContract
 var ResponseError = /** @class */ (function () {
     function ResponseError(init) {

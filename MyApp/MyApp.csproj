@@ -128,13 +128,12 @@
     <Folder Include="wwwroot\js\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.7" />
-    <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.7" />
+    <PackageReference Include="Microsoft.AspNet.Razor" Version="3.3.0" />
+    <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.3.0" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="Microsoft.Web.Infrastructure" Version="1.0.0" />
-    <PackageReference Include="ServiceStack" Version="5.*" />
-    <PackageReference Include="ServiceStack.Server" Version="5.*" />
-    <PackageReference Include="ServiceStack.Razor" Version="5.*" />
+    <PackageReference Include="ServiceStack" Version="8.*" />
+    <PackageReference Include="ServiceStack.Server" Version="8.*" />
+    <PackageReference Include="ServiceStack.Razor" Version="8.*" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
